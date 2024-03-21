@@ -2,5 +2,5 @@ this a first reposetory file in this repo example of statemanagement demo progra
 
 Session example is TransferAmount in this using a IHttpContext and it's object to call a session and setString like ect methods.
 
-in this statemanagement demo routing is also addes in account controller and call thi 3 variation of routing many more variations in routing just my leaning purpose i can added.
+in this statemanagement demo routing is also addes in account controller and call thi 3 variation of routing many more variations in routing just my leaning purpose i can added. I also added a routing text file in this two type of routing .
 
