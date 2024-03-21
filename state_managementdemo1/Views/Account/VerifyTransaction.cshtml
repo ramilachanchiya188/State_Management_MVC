@@ -1,0 +1,24 @@
+﻿@inject IHttpContextAccessor contex
+@{
+    ViewData["Title"] = "VerifyTransaction";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form>
+
+    <h1>Transaction Verifivation</h1>
+
+    From Account No:@contex.HttpContext.Session.GetString("FormAccountNo")
+    <br />
+    From Account Name:@contex.HttpContext.Session.GetString("FormAccountName")
+    <br />
+    To Account No:@contex.HttpContext.Session.GetString("ToAccountNo")
+    <br />
+    To Account Name:@contex.HttpContext.Session.GetString("ToAccountName")
+    <br />
+    Account :@contex.HttpContext.Session.GetString("Account")
+    <br />
+    Mode :@contex.HttpContext.Session.GetString("Mode")
+    <br />
+    <button id="proceed" value="Proceed to transfer">Proceed to transfer</button>
+
+</form>

@@ -1,0 +1,16 @@
+﻿@inject IHttpContextAccessor contx
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>
+        Roll No:@contx.HttpContext.Session.GetInt32("RollNo")
+
+    </p>
+    <p>
+        Name:@contx.HttpContext.Session.GetString("Username")
+    </p>
+</div>

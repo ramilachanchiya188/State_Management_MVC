@@ -1,0 +1,29 @@
+covinentional routing
+
+in a program.cs or startup.cs file in add a route
+example:- - - - - ->
+app.MapControllerRoute(
+    name: "CR",
+    pattern: "/CRAMT",
+    defaults: new { Controller = "Account", action = "TransferAmount" });
+
+attributerouting
+
+in a controller add route in afer the action method
+Examples:--
+[Route("TrAmnt")]
+[Route("AX/SC/DV/FB/RG")]
+public IActionResult TransferAmount()
+{
+    return View();
+}
+
+
+
+ViewData:- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - >>>>
+view bag is used to dynamic method data
+
+
+only signle request use of a tempdata.
+part of a very small requests use of a viewbag and view data.
+ 

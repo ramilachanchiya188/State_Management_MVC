@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "TransferAmount";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>TransferAmount</h1>
+<form asp-controller="Account" asp-action="VerifyTransaction" method="post">
+    <table>
+        <tr>
+            <td>Form AccountNo :</td>
+            <td><input type="text" name="FormAccountNo"/></td>
+        </tr>
+        <tr>
+            <td>Form Account Holder Name :</td>
+            <td><input type="text" name="FormAccountName" /></td>
+        </tr>
+        <tr>
+            <td>To Account :</td>
+            <td><input type="text" name="ToAccountNo" /></td>
+        </tr>
+        <tr>
+            <td>To Account Holder Name :</td>
+            <td><input type="text" name="ToAccountName" /></td>
+        </tr>
+        <tr>
+            <td>Account :</td>
+            <td><input type="text" name="Account" /></td>
+        </tr>
+        <tr>
+            <td>Mode :</td>
+            <td><input type="text" name="Mode" /></td>
+        </tr>
+        
+    </table>
+    <input type="submit" value="Submit" />
+</form>

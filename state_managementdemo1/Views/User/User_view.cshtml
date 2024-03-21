@@ -1,0 +1,40 @@
+﻿@page
+@model state_managementdemo1.Views.User.User_viewModel
+
+@{
+    ViewData["Title"] = "User_view";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>User_view</h1>
+
+<h4>Class</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Class.name" class="control-label"></label>
+                <input asp-for="Class.name" class="form-control" />
+                <span asp-validation-for="Class.name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Class.email" class="control-label"></label>
+                <input asp-for="Class.email" class="form-control" />
+                <span asp-validation-for="Class.email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
